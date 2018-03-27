@@ -75,6 +75,7 @@ const getAccount = async (options = {}) => {
     'account_plugin.multiServerFlow',
     'user.id as userId',
     'user.email as user',
+    'user.name as name'
   ])
   .leftJoin('user', 'user.id', 'account_plugin.userId')
   .where(where);
