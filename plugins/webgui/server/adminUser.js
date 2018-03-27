@@ -23,6 +23,7 @@ exports.getUsers = (req, res) => {
         lastLogin: m.lastLogin,
         username: m.username,
         port: m.port,
+        name: m.name,
       };
     });
     return res.send(success);
